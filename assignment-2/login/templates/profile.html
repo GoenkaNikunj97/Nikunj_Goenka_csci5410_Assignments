@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>{{account}}</h1>
+
+<div class="row" style="margin-top: 10%">
+    <div class="col"></div>
+    <div class="col myContainer">
+        <h1 style="text-align: center">Welcome {{username}}! </h1>
+        <hr size="2" width="90%">
+        <h3 style="text-align: center">Online users </h3>
+        <hr size="2" width="90%">
+
+        {%for user in allOnlineUser%}
+            <p>{{user['name']}} </p>
+        {%endfor%}
+
+        <div class="col" >
+                <a href="/logout" class="btn btn-danger btn-lg btn-block">Logout</a>
+        </div>
+    </div>
+    <div class="col"></div>
+</div>
+
+{% endblock %}

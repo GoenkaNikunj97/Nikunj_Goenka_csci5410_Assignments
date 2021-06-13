@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="row" style="margin-top: 10%">
+    <div class="col"></div>
+    <div class="col myContainer">
+        <h1 style="text-align: center">{{msg}}</h1>
+        <div class="row" style="margin-top: 10%">
+            <div class="col">
+                <a href={{login}} class="btn btn-success btn-lg btn-block">Login</a>
+            </div>
+            <div class="col" >
+                <a href={{register}} class="btn btn-danger btn-lg btn-block">Sign up</a>
+            </div>
+        </div>
+    </div>
+    <div class="col"></div>
+</div>
+{% endblock %}
