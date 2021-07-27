@@ -8,8 +8,10 @@ public class App {
         Timer t = new Timer();
 
         t.scheduleAtFixedRate( new TimerTask() {
-            final String BUCKET_1 = "sample-data-b00868621";
-            String filePath = "N:/STUDIES/MACS/SEM-3/5410 - Serverless Data Processing/Assignements/AssignmentCode/assignment-3/tech/tech";
+            final String BUCKET_1 = "source-data-b00868621";
+            String filePath = "N:/STUDIES/MACS/SEM-3/5410 - Serverless Data Processing/Assignements/AssignmentCode/assignment-3/Dataset/";
+            
+
             TaskA taskAObject = new TaskA();
             int i = 0;
             public void run() {
